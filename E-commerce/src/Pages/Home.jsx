@@ -1,0 +1,101 @@
+import React from 'react'
+import Red11 from '../assets/Red11.png'
+import Green11 from '../assets/Green11.png'
+import White11 from '../assets/White11.png'
+import Black11 from '../assets/Black11.png'
+import Watch from '../assets/AppleWatch.png'
+import Headsets from '../assets/Headphones.png'
+import Button from '../assets/Button.png'
+import { FaDollarSign } from "react-icons/fa6";
+
+
+export default function Home() {
+  // opened array for transaction information
+    const Homes = [
+        {
+            Image: Watch,
+            name: "Apple Watch",
+            Desc: "Series 5 SE",
+            Price: "$ 529.99",
+            Cart: Button
+            },
+            {
+            Image: Headsets,
+            name: "Sony ZX330BT",
+            Desc: "Light Grey",
+            Price: "$ 39.99",
+            Cart: Button
+            },
+            {
+            Image: Black11,
+            name: "Iphone 11",
+            Desc: "Serious Black",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+            {
+            Image: Green11,
+            name: "iphone 11",
+            Desc: "Subway Blue",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+             {
+            Image: Green11,
+            name: "iphone 11",
+            Desc: "Subway Blue",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+             {
+            Image: Green11,
+            name: "iphone 11",
+            Desc: "Subway Blue",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+            {
+            Image: Green11,
+            name: "iphone 11",
+            Desc: "Subway Blue",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+            {
+            Image: Green11,
+            name: "iphone 11",
+            Desc: "Subway Blue",
+            Price: "$ 619.99",
+            Cart: Button
+            },
+    ]
+
+
+  return (
+    <div className='grid grid-cols-4 gap-4 p-4 bg-gray-200'>
+      
+      
+      {Homes.map((Home, index) => (
+        <div
+          key={index}
+          className=" w-[905px] h-[397px] "
+        >
+        
+        <img src={Home.Image} alt={Home.name} className="image" />
+            
+          
+          <div className='flex flex-col w-[191px] h-[125px] p-2 items-center gap-2'>
+            <p className="name">{Home.name}</p>
+            <p className="desc">{Home.Desc}</p>
+            <p className='price flex items-center gap-2'>{Home.Price} <img src={Home.Cart} alt={Home.name} className="image" /></p>
+            
+          </div>
+          
+
+          
+        </div>
+      ))}
+    </div>
+  )
+}
+

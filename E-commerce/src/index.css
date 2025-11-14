@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+.image {
+  width: 191.35829162597656;
+  height: 232;
+  padding: 16px;
+  opacity: 1;
+  border-radius: 22px;
+
+}
+.name {
+  width: 110;
+  height: 24;
+  opacity: 1;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+.desc {
+  width: 72;
+  height: 19;
+  opacity: 1;
+  font-size: 16px;
+}
+.price {
+  width: 76;
+  height: 24;
+  opacity: 1;
+  font-size: 20px;
+
+}
