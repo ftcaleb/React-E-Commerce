@@ -1,8 +1,9 @@
 import React from 'react'
 import ProductImage from "../assets/Product-Image.png"
+
 function ItemView () {
   return (
- <div className=''>
+   <>
   {/*Sidebar*/}
   <div className="h-screen bg-gray-100 p-6 flex justify-center ">
   <div className=" px-4 bg-white flex flex-col items-center gap-8 py-10 border-r">
@@ -42,9 +43,15 @@ function ItemView () {
 <div className="grid grid-cols-12 gap-6">
 {/* Thumbnails */}
 <div className="col-span-2 flex flex-col gap-4">
-<div className="w-16 h-16 bg-gray-200 rounded-xl"></div>
-<div className="w-16 h-16 bg-gray-200 rounded-xl"></div>
-<div className="w-16 h-16 bg-gray-200 rounded-xl"></div>
+<div className="w-16 h-16 bg-gray-200 rounded-xl">
+<img></img>
+</div>
+<div className="w-16 h-16 bg-gray-200 rounded-xl">
+  <img></img>
+</div>
+<div className="w-16 h-16 bg-gray-200 rounded-xl">
+  <img></img>
+</div>
 </div>
 
 
@@ -113,7 +120,7 @@ View Bag
 </button>
 </aside>
 </div>
-</div>
+</>
 );
 }
 
