@@ -1,5 +1,10 @@
 import React from 'react'
 import ProductImage from "../assets/Product-Image.png"
+import TinyWatch from "../assets/TinyWatch.png"
+import Laptop from "../assets/laptop.png"
+import iphone1 from "../assets/iphone1.png"
+import iphone2 from "../assets/iphone2.png"
+import iphone3 from "../assets/iphone3.png"
 
 function ItemView () {
   return (
@@ -43,20 +48,21 @@ function ItemView () {
 <button className="flex items-center gap-2 text-black mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.375 5.25L8.625 12L15.375 18.75" stroke="#1A1F16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
- Back</button>
+ Back
+ </button>
 
 
 <div className="grid grid-cols-12 gap-6">
 {/* Thumbnails */}
-<div className="col-span-2 flex flex-col gap-4">
-<div className="w-16 h-16 bg-gray-200 rounded-xl">
-<img></img>
+<div className="col-span-2  flex-col gap-4">
+<div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
+  <img src={TinyWatch} alt="image"></img>
 </div>
-<div className="w-16 h-16 bg-gray-200 rounded-xl">
-  <img></img>
+<div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
+  <img src={TinyWatch} alt="image" ></img>
 </div>
-<div className="w-16 h-16 bg-gray-200 rounded-xl">
-  <img></img>
+<div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
+  <img src={TinyWatch} alt="image"></img>
 </div>
 </div>
 
@@ -106,21 +112,34 @@ Add to Bag
 {/* Description */}
 <h2 className="text-2xl font-bold mb-4">Description</h2>
 <p className="text-gray-700 leading-relaxed">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur, non sint, esse tenetur corporis officiis commodi repellat iure voluptatibus accusamus et ea blanditiis voluptatum maxime, excepturi omnis consectetur
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quam nesciunt iure repellat? Tenetur, eveniet minus itaque eaque vitae hic perspiciatis veniam animi libero at doloremque nemo cumque dolore suscipit!
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim odio faucibus nec malesuada purus volutpat vel sed viverra. Id sagittis, phasellus dui in arcu. Nec arcu, sit nunc, nibh purus pellentesque sagittis. Felis rhoncus facilisis massa eget purus in purus. Etiam at cras nulla nunc. Malesuada in pretium diam scelerisque sit mattis in egestas neque. Eu porta tempor sodales nisl integer turpis porttitor sed sed. Ut senectus odio dictum enim velit tempor diam quisque suspendisse.
+Orci vel ridiculus diam viverra. Libero malesuada orci, quis placerat suscipit augue imperdiet. Et praesent augue dictum mauris eget lacus malesuada. Aenean nisi, sodales natoque massa magna dignissim mi. Mattis tellus, justo, lorem sed tempor diam sit viverra enim. Id id placerat eu etiam nulla laoreet.
+Dignissim leo fames turpis quis suspendisse vulputate laoreet vulputate ac. Aliquam justo lectus eu dui porttitor. Cras a aliquam phasellus sollicitudin ornare. Tristique volutpat facilisis in ut proin. Est vitae facilisi sollicitudin id lorem mattis nibh ipsum, nec. Consectetur consectetur morbi morbi aliquet mi risus, velit, sit at. Integer morbi viverra hendrerit risus.
+Odio phasellus nibh senectus nec id enim quam sed. 
 </p>
 </section>
 
 
 {/* Bag Section */}
-<aside className="col-span-4 border-l pl-6">
+<div className="col-span-4 border-l pl-6">
 <h2 className="text-2xl font-bold mb-6">Bag</h2>
 
 
-<div className="flex gap-4 mb-10">
-<div className="w-20 h-20 bg-gray-200 rounded-xl"></div>
-<div className="w-20 h-20 bg-gray-200 rounded-xl"></div>
-<div className="w-20 h-20 bg-gray-200 rounded-xl"></div>
+<div className="flex  gap-4 mb-10">
+<div className="flex flex-col gap-3">
+<div className="w-20 h-20 bg-gray-200 rounded-xl flex justify-center items-center">
+<img src={Laptop}></img>
+</div>
+<div className="w-20 h-20 bg-gray-200 rounded-xl flex justify-center items-center">
+<img src={iphone3}></img>
+</div>
+</div>
+<div className="w-20 h-20 bg-gray-200 rounded-xl flex justify-center">
+<img src={iphone1}></img>
+</div>
+<div className="w-20 h-20 bg-gray-200 rounded-xl flex justify-center items-center">
+<img src={iphone2}></img>
+</div>
 </div>
 
 
@@ -130,7 +149,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam quam nesciunt i
 </svg>
 View Bag
 </button>
-</aside>
+</div>
 </div>
 </>
 );
