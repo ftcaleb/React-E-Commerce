@@ -1,7 +1,7 @@
 import React from 'react'
 import White11 from '../assets/White11.png'
 import Black11 from '../assets/Black11.png'
-import Laptop from '../assets/Laptop.png'
+import Laptop from '../assets/SLaptop.png'
 import Blue11 from '../assets/Blue11.png'
 import { IoBagHandleOutline } from "react-icons/io5";
 import ViewBag from '../assets/ViewBag.svg'
