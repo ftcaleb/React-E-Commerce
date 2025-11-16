@@ -54,7 +54,7 @@ function ItemView () {
 
 <div className="grid grid-cols-12 gap-6">
 {/* Thumbnails */}
-<div className="col-span-2  flex-col gap-4">
+<div className=" col-span-2 gap-4">
 <div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
   <img src={TinyWatch} alt="image"></img>
 </div>
