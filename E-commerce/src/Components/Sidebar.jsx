@@ -19,7 +19,7 @@ export default function Sidebar() {
 
   return (
     <aside className='h-full'>
-      <nav className="h-full min-h-full flex flex-col bg-white border-r shadow-sm ">
+      <nav className="h-full min-h-full flex flex-col bg-white  shadow-sm ">
         {/* Top Section */}
         
 
