@@ -5,11 +5,11 @@ export default function AddAddress() {
   return (
     <div className="isolate flex justify-center bg-gray-200 px-6 py-24 sm:py-32 lg:px-8">
       
-      <div className='contact'>
+      <div className='contact bg-white'>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div className="sm:col-span-2">
-            <label  className="block text-sm/6 font-semibold text-label">
+            <label  className="block text-sm/6 font-semibold text-label text-Scolor">
               Shipping Name
             </label>
             <div className="mt-2.5">
@@ -23,7 +23,7 @@ export default function AddAddress() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label  className="block text-sm/6 font-semibold text-label">
+            <label  className="block text-sm/6 font-semibold text-label text-Scolor">
               Street Name
             </label>
             <div className="mt-2.5">
@@ -37,7 +37,7 @@ export default function AddAddress() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label  className="block text-sm/6 font-semibold text-label">
+            <label  className="block text-sm/6 font-semibold text-label text-Scolor">
               City
             </label>
             <div className="mt-2.5">
@@ -51,7 +51,7 @@ export default function AddAddress() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="email" className="block text-sm/6 font-semibold text-label">
+            <label htmlFor="email" className="block text-sm/6 font-semibold text-label text-Scolor">
               State/Province
             </label>
             <div className="mt-2.5">
@@ -65,7 +65,7 @@ export default function AddAddress() {
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label  className="block text-sm/6 font-semibold text-label">
+            <label  className="block text-sm/6 font-semibold text-label text-Scolor">
               Country
             </label>
             <div className="mt-2.5">
@@ -108,8 +108,8 @@ export default function AddAddress() {
           </button>
         </div>
         <div className='flex mt-[30px]'>
-            <div className='text-label flex justify-start underline'>Back</div>
-            <div className='flex justify-end ml-90 contact-secure'><img src={Gbag} alt="" />Secure Connection</div>
+            <div className='text-label flex justify-start underline text-Scolor'>Back</div>
+            <div className='flex justify-end ml-90 contact-secure '><img src={Gbag} alt="" />Secure Connection</div>
         </div>
       </form>
       </div>

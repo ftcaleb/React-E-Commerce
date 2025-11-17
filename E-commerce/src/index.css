@@ -87,3 +87,20 @@
   padding-left: 16px;
 
 }
+.contact-secure {
+  color:  rgba(2, 214, 147, 1);
+
+
+}
+.contact {
+  width: 676px;
+  height: 834px;
+  border-radius: 15px;
+  opacity: 1;
+  top: 95px;
+  left: 382px;
+  padding: 32px;
+  gap: 16px;
+  background-color: white;
+
+}
