@@ -41,30 +41,30 @@ export default function Home() {
             Cart: Button
             },
              {
-            Image: Green11,
+            Image: Red11,
             name: "iphone 11",
-            Desc: "Subway Blue",
+            Desc: "Product Red",
             Price: "$ 619.99",
             Cart: Button
             },
              {
-            Image: Green11,
+            Image: White11,
             name: "iphone 11",
-            Desc: "Subway Blue",
+            Desc: "Mily White",
             Price: "$ 619.99",
             Cart: Button
             },
             {
-            Image: Green11,
-            name: "iphone 11",
-            Desc: "Subway Blue",
+            Image: Red11,
+            name: "iphone 13",
+            Desc: "Product Red",
             Price: "$ 619.99",
             Cart: Button
             },
             {
-            Image: Green11,
-            name: "iphone 11",
-            Desc: "Subway Blue",
+            Image: Red11,
+            name: "iphone 14",
+            Desc: "Product Red",
             Price: "$ 619.99",
             Cart: Button
             },
@@ -72,13 +72,13 @@ export default function Home() {
 
 
   return (
-    <div className='grid grid-cols-4 gap-4 p-4 bg-gray-200'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-gray-200'>
       
       
       {Homes.map((Home, index) => (
         <div
           key={index}
-          className=" w-[905px] h-[397px] "
+          className=" w-[905px] h-[397px]"
         >
         
         <img src={Home.Image} alt={Home.name} className="image" />

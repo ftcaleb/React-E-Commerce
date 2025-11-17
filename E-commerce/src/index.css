@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+:root {
+  --gray: rgba(96, 105, 92, 1);
+}
+
+@layer utilities {
+  .text-Scolor {
+    color: var(--gray);
+  }
+}
+
 .image {
   width: 191.35829162597656;
   height: 232;
@@ -27,5 +37,53 @@
   height: 24;
   opacity: 1;
   font-size: 20px;
+
+}
+.sideimage {
+  width: 80px;
+  height: 80px;
+  padding: 8px;
+  gap: 1px;
+  opacity: 1;
+  border-radius: 12px;
+
+}
+.sidebutton {
+  width: 159;
+  height: 40;
+  gap: 8px;
+  opacity: 1;
+  border-radius: 14px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+
+}
+.sidebar2 {
+  border-left: 4px solid rgba(26, 31, 22, 0.5)
+}
+.ViewBag {
+  width: 159;
+  height: 40;
+  gap: 8px;
+  opacity: 1;
+  border-radius: 14px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-bottom: 8px;
+  padding-left: 24px;
+
+}
+.Search {
+  width: 507px;
+  height: 56px;
+  gap: 8px;
+  opacity: 1;
+  border-radius: 13px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
 
 }
