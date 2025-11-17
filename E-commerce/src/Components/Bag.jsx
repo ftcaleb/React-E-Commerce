@@ -4,6 +4,7 @@ import Black11 from "../assets/Black11.png";
 import White11 from "../assets/White11.png";
 import Green11 from "../assets/Green11.png";
 import AppleWatch from "../assets/AppleWatch.png";
+import BlueImage from "../assets/Blue11.png"
 
 export default function Bag() {
   const items = [
