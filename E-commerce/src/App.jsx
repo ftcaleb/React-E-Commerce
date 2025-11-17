@@ -3,7 +3,7 @@ import Home from './Pages/Home'
 import Search  from './Components/Search'
 import Sidebar from './Components/Sidebar'
 import Sidebar2 from './Components/Sidebar2'
-import AddAddress from './Components/AddAddress'
+
 function App() {
   return (
      <div className='flex bg-gray-200'>
@@ -12,7 +12,7 @@ function App() {
         <div className='flex justify-center '>
           <Search/>
         </div>
-
+        
         <div className=''>
         <Home/>
         </div>
@@ -25,10 +25,10 @@ function App() {
         </div>
 
       </div>
-
-
+      
+    
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
