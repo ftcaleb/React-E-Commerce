@@ -61,8 +61,7 @@ function MainProduct() {
 
 
 <p className="text-gray-700 mt-4">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
-pellentesque tellus imperdiet mattis.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus malesuada mattis. Poin in quis lacus, non volutpat, interdum et imperdiet. Dignissim nisl leo in. Sit amet, in lacus, nunc volutpat, interdum et imperdiet. Dignissim nisl leo in. Vitae elementum nunc id.
 </p>
 
 

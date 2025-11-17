@@ -5,6 +5,7 @@ import Laptop from '../assets/SLaptop.png'
 import Blue11 from '../assets/Blue11.png'
 import { IoBagHandleOutline } from "react-icons/io5";
 import ViewBag from '../assets/ViewBag.svg'
+import { Link } from 'react-router-dom';
 
 export default function Sidebar2() {
 
@@ -43,7 +44,9 @@ export default function Sidebar2() {
           className="w-[300px] h-[90px] grid grid-cols-3 mb-4"
         >
         <div>
+          
         <img src={Sidebar.Image} alt={Sidebar.name} className="sideimage" />
+        
         </div>
             
             
@@ -56,7 +59,9 @@ export default function Sidebar2() {
       ))} 
     </div>
     <div className='flex justify-center'>
+      <Link to='/bag' >
         <img src={ViewBag} alt="" className="Viewbag" />
+        </Link>
     </div>
     </div>
   )
