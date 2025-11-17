@@ -10,92 +10,30 @@ import { FaDollarSign } from "react-icons/fa6";
 
 
 export default function Home() {
-  // opened array for transaction information
-    const Homes = [
-        {
-            Image: Watch,
-            name: "Apple Watch",
-            Desc: "Series 5 SE",
-            Price: "$ 529.99",
-            Cart: Button
-            },
-            {
-            Image: Headsets,
-            name: "Sony ZX330BT",
-            Desc: "Light Grey",
-            Price: "$ 39.99",
-            Cart: Button
-            },
-            {
-            Image: Black11,
-            name: "Iphone 11",
-            Desc: "Serious Black",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-            {
-            Image: Green11,
-            name: "iphone 11",
-            Desc: "Subway Blue",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-             {
-            Image: Red11,
-            name: "iphone 11",
-            Desc: "Product Red",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-             {
-            Image: White11,
-            name: "iphone 11",
-            Desc: "Mily White",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-            {
-            Image: Red11,
-            name: "iphone 13",
-            Desc: "Product Red",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-            {
-            Image: Red11,
-            name: "iphone 14",
-            Desc: "Product Red",
-            Price: "$ 619.99",
-            Cart: Button
-            },
-    ]
-
-
+  
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 bg-gray-200'>
-      
-      
-      {Homes.map((Home, index) => (
-        <div
-          key={index}
-          className=" w-[905px] h-[397px]"
-        >
-        
-        <img src={Home.Image} alt={Home.name} className="image" />
+    <div className='flex bg-gray-200'>
+          <Sidebar/>
+          <div className='flex-1 justify-center mb-2.5 p-4'>
+            <div className='flex justify-center '>
+              <Search/>
+            </div>
             
-          
-          <div className='flex flex-col w-[191px] h-[125px] p-2 items-center gap-2'>
-            <p className="name">{Home.name}</p>
-            <p className="desc">{Home.Desc}</p>
-            <p className='price flex items-center gap-2'>{Home.Price} <img src={Home.Cart} alt={Home.name} className="image" /></p>
-            
+            <div className=''>
+            <ProductCard/>
+            </div>
+    
+          </div>
+    
+          <div className="border-l-4 sidebar2 gap-4 p-4 top-[51px] sm:invisible  md:visible lg:visible">
+            <div>
+              <Sidebar2/>
+            </div>
+    
           </div>
           
-
-          
+        
         </div>
-      ))}
-    </div>
   )
 }
 

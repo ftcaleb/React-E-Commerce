@@ -1,8 +1,9 @@
 import React from 'react'
-import Home from './Pages/Home'
 import Search  from './Components/Search'
 import Sidebar from './Components/Sidebar'
 import Sidebar2 from './Components/Sidebar2'
+import ProductCard from './Components/ProductCard'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </div>
         
         <div className=''>
-        <Home/>
+        <ProductCard/>
         </div>
 
       </div>
