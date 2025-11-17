@@ -1,34 +1,35 @@
 import React from 'react'
-import Search  from './Components/Search'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+
+// Pages / Components
+import Search from './Components/Search'
 import Sidebar from './Components/Sidebar'
 import Sidebar2 from './Components/Sidebar2'
 import ProductCard from './Components/ProductCard'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; 
+import AddAddress from './Components/AddAddress'
+import Bag from './Components/Bag'      // <-- NEW
+import ItemView from './Components/ItemView'  // <-- NEW
+import Home from './Pages/Home'         // <-- RECOMMENDED
 
 function App() {
   return (
-     <div className='flex bg-gray-200'>
-      <Sidebar/>
-      <div className='flex-1 justify-center mb-2.5 p-4'>
-        <div className='flex justify-center '>
-          <Search/>
-        </div>
-        
-        <div className=''>
-        <ProductCard/>
-        </div>
+    <Router>
+      <Routes>
 
-      </div>
+        {/* HOME PAGE */}
+        <Route path="/" element={<Home />} />
 
-      <div className="border-l-4 sidebar2 gap-4 p-4 top-[51px] sm:invisible  md:visible lg:visible">
-        <div>
-          <Sidebar2/>
-        </div>
+        {/* ADD ADDRESS PAGE */}
+        <Route path="/add-address" element={<AddAddress />} />
 
-      </div>
-      
-    
-    </div>
+        {/* BAG PAGE */}
+        <Route path="/bag" element={<Bag />} />
+
+        {/* PRODUCT ITEM PAGE */}
+        <Route path="/item/:id" element={<ItemView />} />
+
+      </Routes>
+    </Router>
   );
 }
 

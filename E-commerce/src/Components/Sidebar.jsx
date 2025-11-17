@@ -10,6 +10,9 @@ import Store from '../assets/Store.png'
 import Cart from '../assets/Scart.png';
 import { IoLogOut } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
+import { Link } from 'react-router-dom';
+
+
 
 
 const SidebarContext = createContext();
@@ -28,7 +31,9 @@ export default function Sidebar() {
         {/* Sidebar items */}
         <SidebarContext.Provider value={{ expanded }}>
           <ul className="flex-1 px-3">
-            <SidebarItem src={Gbag}  />
+            <Link to='/'><SidebarItem src={Gbag}  /></Link> 
+            
+            
             <div className=" flex justify-between items-center ml-3">
           
           <button
@@ -38,8 +43,8 @@ export default function Sidebar() {
             {expanded ? <RxCross2 size={20}/> : <RxHamburgerMenu size={20} />}
           </button>
         </div>          
-            <SidebarItem src={Store} text="Store"  />
-            <SidebarItem src={Cart} text="Bag" />
+            <Link to='/'><SidebarItem src={Store} text="Store"  /></Link>
+            <Link to='item/:id'><SidebarItem src={Cart} text="Bag" /></Link>
             <SidebarItem icon={<IoLogOut size={20} className='text-white bg-red-600 rounded mt-[690px] w-[25px] h-[25px] ml-[3px]' />}  />
           </ul>
         </SidebarContext.Provider>

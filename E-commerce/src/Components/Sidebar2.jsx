@@ -6,7 +6,6 @@ import Blue11 from '../assets/Blue11.png'
 import { IoBagHandleOutline } from "react-icons/io5";
 import ViewBag from '../assets/ViewBag.svg'
 
-
 export default function Sidebar2() {
 
     const Sidebars = [
