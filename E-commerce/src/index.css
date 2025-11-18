@@ -11,29 +11,25 @@
 }
 
 .image {
-  width: 191.35829162597656;
-  height: 232;
+  
   padding: 16px;
   opacity: 1;
   border-radius: 22px;
 
 }
 .name {
-  width: 110;
-  height: 24;
+  
   opacity: 1;
   font-size: 20px;
   font-weight: bold;
 
 }
 .desc {
-  width: 72p;
-  height: 19;
+ 
   opacity: 1;
   font-size: 16px;
 }
 .price {
-  width: 76;
   height: 24px;
   opacity: 1;
   font-size: 20px;
@@ -48,9 +44,10 @@
   border-radius: 12px;
 
 }
+/* width: 159;
+  height: 40; */
 .sidebutton {
-  width: 159;
-  height: 40;
+  
   gap: 8px;
   opacity: 1;
   border-radius: 14px;
@@ -63,9 +60,9 @@
 .sidebar2 {
   border-left: 4px solid rgba(26, 31, 22, 0.5)
 }
+/* width: 159;
+  height: 40; */
 .ViewBag {
-  width: 159;
-  height: 40;
   gap: 8px;
   opacity: 1;
   border-radius: 14px;
@@ -104,8 +101,9 @@
   background-color: white;
 
 }
+/* width: 111; */
 .checkout {
-  width: 111;
+  
   height: 40px;
   top: 403px;
   left: 1207px;
