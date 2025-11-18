@@ -44,7 +44,7 @@ export default function Sidebar() {
           </button>
         </div>          
             <Link to='/'><SidebarItem src={Store} text="Store"  /></Link>
-            <Link to='item/:id'><SidebarItem src={Cart} text="Bag" /></Link>
+            <Link to='/bag'><SidebarItem src={Cart} text="Bag" /></Link>
             <SidebarItem icon={<IoLogOut size={20} className='text-white bg-red-600 rounded mt-[690px] w-[25px] h-[25px] ml-[3px]' />}  />
           </ul>
         </SidebarContext.Provider>

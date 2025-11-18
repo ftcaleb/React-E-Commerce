@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
     return(
-        //Search item bar
+        //Opened a div for the search input and styled it accordingly
         <div className='gap-4 py-8 px-8  items-center mb-15 w-[475px] h-6'>
             <p className='text-Scolor left-2 gap-2.5 right-2 text-[16px]'>
                 Search Item

@@ -4,18 +4,23 @@ import ProductImage from "../assets/Product-Image.png";
 import Laptop from "../assets/Laptop.png";
 import Sidebar from './Sidebar';
 import Sidebar2 from './Sidebar2';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 
 
 
 function MainProduct() {
+  const { state } = useLocation();
+  const product = state?.product;
+
   return (
     <div className='flex bg-gray-200'>
+      {/* Imported my sidebar onto his content */}
       <Sidebar/>
       <div className='flex-1 justify-center mb-2.5 p-4'>
       {/* Main Product Section */}
 <section className="col-span-7 px-4 overflow-y-auto">
+  {/* Link tag for back button */}
   <Link to='/'>
 <button className="flex items-center gap-2 text-black mb-4"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.375 5.25L8.625 12L15.375 18.75" stroke="#1A1F16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,29 +34,32 @@ function MainProduct() {
 {/* Thumbnails */}
 <div className="col-span-2  flex-col gap-4">
 <div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
-  <img src={TinyWatch} alt="image"></img>
+  <img src={product.Image} alt="image"></img>
 </div>
 <div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
-  <img src={TinyWatch} alt="image" ></img>
+  <img src={product.Image} alt="image" ></img>
 </div>
 <div className="w-16 h-16 bg-white rounded-xl flex justify-center items-center mb-4">
-  <img src={TinyWatch} alt="image"></img>
+  <img src={product.Image} alt="image"></img>
 </div>
 </div>
 
 
 {/* Main Image */}
 <div className="col-span-4 flex justify-center items-center">
-<div className="w-56 h-72 bg-white rounded-xl">
-<img src={ProductImage} alt="image"></img>
+<div className="w-56 p-4 bg-white rounded-xl">
+  {/* targeting the product objects from product card */}
+<img src={product.Image} alt="image"></img>
 </div>
 </div>
 
 
 {/* Product Info */}
 <div className="col-span-6">
-<h1 className="text-4xl font-bold">Apple Watch</h1>
-<p className="text-gray-600 text-xl">Series 5 SE</p>
+  {/* targeting the product objects from product card */}
+<h1 className="text-4xl font-bold">{product.name}</h1>
+{/* targeting the product objects from product card */}
+<p className="text-gray-600 text-xl">{product.Desc}</p>
 
 
 <div className="flex items-center gap-2 mt-2">
@@ -59,14 +67,14 @@ function MainProduct() {
 <p className="text-sm text-gray-600">4.5 / 5</p>
 </div>
 
-
-<p className="text-2xl font-semibold mt-4">$ 529.99</p>
+{/* targeting the product objects from product card */}
+<p className="text-2xl font-semibold mt-4">{product.Price}</p>
 
 
 <p className="text-gray-700 mt-4">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pellentesque tellus malesuada mattis. Poin in quis lacus, non volutpat, interdum et imperdiet. Dignissim nisl leo in. Sit amet, in lacus, nunc volutpat, interdum et imperdiet. Dignissim nisl leo in. Vitae elementum nunc id.
+  {product.shortDesc}
 </p>
-
+{/* Link tag for add to bag button  */}
 <Link to='/checkout'>
 <button className="mt-6 bg-black text-white px-6 py-3 rounded-xl flex items-center ml-60 gap-2">
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,12 +92,9 @@ Add to Bag
 
 {/* Description */}
 <h2 className="text-2xl font-bold mb-4">Description</h2>
-<p className="text-gray-700 leading-relaxed">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dignissim odio faucibus nec malesuada purus volutpat vel sed viverra. Id sagittis, phasellus dui in arcu. Nec arcu, sit nunc, nibh purus pellentesque sagittis. Felis rhoncus facilisis massa eget purus in purus. Etiam at cras nulla nunc. Malesuada in pretium diam scelerisque sit mattis in egestas neque. Eu porta tempor sodales nisl integer turpis porttitor sed sed. Ut senectus odio dictum enim velit tempor diam quisque suspendisse.
-Orci vel ridiculus diam viverra. Libero malesuada orci, quis placerat suscipit augue imperdiet. Et praesent augue dictum mauris eget lacus malesuada. Aenean nisi, sodales natoque massa magna dignissim mi. Mattis tellus, justo, lorem sed tempor diam sit viverra enim. Id id placerat eu etiam nulla laoreet.
-Dignissim leo fames turpis quis suspendisse vulputate laoreet vulputate ac. Aliquam justo lectus eu dui porttitor. Cras a aliquam phasellus sollicitudin ornare. Tristique volutpat facilisis in ut proin. Est vitae facilisi sollicitudin id lorem mattis nibh ipsum, nec. Consectetur consectetur morbi morbi aliquet mi risus, velit, sit at. Integer morbi viverra hendrerit risus.
-Odio phasellus nibh senectus nec id enim quam sed.Aliquam justo lectus eu dui porttitor. Cras a aliquam phasellus sollicitudin ornare. Tristique volutpat facilisis in ut proin. Est vitae facilisi sollicitudin id lorem mattis nibh ipsum, nec. Consectetur consectetur morbi morbi aliquet mi risus, velit, sit at. Integer morbi viverra hendrerit risus.
-Odio phasellus nibh senectus nec id enim. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae fugiat provident necessitatibus repudiandae odio doloribus saepe molestias modi, et quis maiores impedit nesciunt. Praesentium excepturi dicta ipsum consequuntur optio dignissimos.
+{/* targeting the product objects from product card */}
+<p className="text-sm text-gray-600 leading-relaxed max-h-[300px] overflow-y-auto pr-2">
+  {product.longDesc}
 </p>
 </section>
 
@@ -105,6 +110,7 @@ Odio phasellus nibh senectus nec id enim. Lorem ipsum dolor, sit amet consectetu
 
 </div>
 </div>
+{/* Added my sidebar2 component  */}
 <div className="border-l-4 sidebar2 gap-4 p-4 top-[51px] sm:invisible md:visible lg:visible">
         <Sidebar2 />
    </div>

@@ -17,6 +17,7 @@ import OrderSuccess from './Pages/OrderSuccess';
 
 function App() {
   return (
+    // Routes for each page
     <Router>
       <Routes>
 

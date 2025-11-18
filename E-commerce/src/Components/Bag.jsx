@@ -57,7 +57,7 @@ export default function Bag() {
 return (
   <div className="min-h-screen bg-[#eeeeee] flex">
     
-    {/* Sidebar */}
+    {/* Imported my sidbar component */}
     <Sidebar/>
     {/* Main content */}
     <main className="flex-1 flex p-10 gap-10">
