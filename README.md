@@ -20,7 +20,7 @@ Features
 
 Product listing & Search
 
-Cart functionality with Redux Toolkit
+
 
 Address form & Order confirmation
 
