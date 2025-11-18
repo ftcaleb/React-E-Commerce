@@ -21,7 +21,7 @@ function App() {
       <Routes>
 
         {/* HOME PAGE */}
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
 
         <Route path="/order-success" element={<OrderSuccess />} />
 

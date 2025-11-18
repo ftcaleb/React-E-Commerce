@@ -14,6 +14,7 @@ export default function Product() {
   // opened array for transaction information
     const Products = [
         {
+            id:1,
             Image: Watch,
             name: "Apple Watch",
             Desc: "Series 5 SE",
@@ -21,6 +22,7 @@ export default function Product() {
             Cart: Button
             },
             {
+            id:2,
             Image: Headsets,
             name: "Sony ZX330BT",
             Desc: "Light Grey",
@@ -28,6 +30,7 @@ export default function Product() {
             Cart: Button
             },
             {
+            id:3,
             Image: Black11,
             name: "Iphone 11",
             Desc: "Serious Black",
@@ -35,6 +38,7 @@ export default function Product() {
             Cart: Button
             },
             {
+            id:4,
             Image: Green11,
             name: "iphone 11",
             Desc: "Subway Blue",
@@ -42,6 +46,7 @@ export default function Product() {
             Cart: Button
             },
              {
+            id:5,
             Image: Red11,
             name: "iphone 11",
             Desc: "Product Red",
@@ -49,6 +54,7 @@ export default function Product() {
             Cart: Button
             },
              {
+            id:6,
             Image: White11,
             name: "iphone 11",
             Desc: "Mily White",
@@ -56,6 +62,7 @@ export default function Product() {
             Cart: Button
             },
             {
+            id:7,
             Image: Red11,
             name: "iphone 13",
             Desc: "Product Red",
@@ -63,6 +70,7 @@ export default function Product() {
             Cart: Button
             },
             {
+            id:8,
             Image: Red11,
             name: "iphone 14",
             Desc: "Product Red",
