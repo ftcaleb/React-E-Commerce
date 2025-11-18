@@ -5,7 +5,7 @@ import White11 from '../assets/White11.png'
 import Black11 from '../assets/Black11.png'
 import Watch from '../assets/AppleWatch.png'
 import Headsets from '../assets/Headphones.png'
-import Button from '../assets/Button.png'
+import Button from '../assets/Buttonn.png'
 import { FaDollarSign } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -90,6 +90,7 @@ export default function Product() {
           <div className='flex flex-col w-[191px] h-[125px] p-2 items-center gap-2'>
             <p className="name">{Product.name}</p>
             <p className="desc">{Product.Desc}</p>
+            <div></div>
             <p className='price flex items-center gap-2'>{Product.Price} <img src={Product.Cart} alt={Product.name} className="image" /></p>
             
           </div>
