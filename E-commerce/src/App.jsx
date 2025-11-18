@@ -7,9 +7,9 @@ import Sidebar from './Components/Sidebar'
 import Sidebar2 from './Components/Sidebar2'
 import ProductCard from './Components/ProductCard'
 import AddAddress from './Components/AddAddress'
-import Bag from './Components/Bag'      // <-- NEW
-import ItemView from './Components/ItemView'  // <-- NEW
-import Home from './Pages/Home'         // <-- RECOMMENDED
+import Bag from './Components/Bag'      
+import ItemView from './Components/ItemView'  
+import Home from './Pages/Home'         
 import AddPayment from './Components/AddPayment';
 import Checkout from './Components/Checkout';
 
