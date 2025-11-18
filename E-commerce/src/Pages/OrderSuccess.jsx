@@ -5,7 +5,7 @@ export default function OrderSuccess() {
   return (
     <div>
       <h1>Order Successful!</h1>
-      <AddAddress />
+      <AddAddress/>
     </div>
   );
 }
