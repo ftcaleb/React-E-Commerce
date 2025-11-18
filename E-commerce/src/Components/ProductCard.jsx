@@ -90,9 +90,8 @@ export default function Product() {
           <div className='flex flex-col w-[191px] h-[125px] p-2 items-center gap-2'>
             <p className="name">{Product.name}</p>
             <p className="desc">{Product.Desc}</p>
-            <div className='price flex items-center gap-2'>
+            
                 <p className='price flex items-center gap-2'>{Product.Price} <img src={Product.Cart} alt={Product.name} className="image" /></p>
-            </div>
             
             
           </div>
