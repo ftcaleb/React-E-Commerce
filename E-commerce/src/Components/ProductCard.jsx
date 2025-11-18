@@ -87,7 +87,7 @@ export default function Product() {
       {Products.map((Product, index) => (
         <div
           key={index}
-          className=" w-[905px] h-[397px]"
+          className=" "
         >
         
         <Link to='/item/:id/'>
