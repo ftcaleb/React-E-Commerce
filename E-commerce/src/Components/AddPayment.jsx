@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { CreditCard, Lock } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 export default function AddPayment() {
   const [paymentMethods] = useState([
@@ -169,6 +170,7 @@ function AddCardForm({ formData, onChange, formatCardNumber, formatExpiry, onSub
           <label className="text-sm text-gray-700 cursor-pointer">Save as default</label>
         </div>
 
+        <Link to='/checkout'>
         <button
           onClick={onSubmit}
           className="w-full bg-gray-900 hover:bg-gray-800 text-white py-2 rounded mt-4 flex items-center justify-center gap-2"
@@ -176,6 +178,7 @@ function AddCardForm({ formData, onChange, formatCardNumber, formatExpiry, onSub
           <CreditCard className="w-4 h-4" />
           Add Card
         </button>
+        </Link>
       </div>
     </section>
   )

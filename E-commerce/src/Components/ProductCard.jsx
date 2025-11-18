@@ -82,7 +82,9 @@ export default function Product() {
           className=" w-[905px] h-[397px]"
         >
         
+        <Link to='/item/:id/'>
         <img src={Product.Image} alt={Product.name} className="image" />
+        </Link>
             
           
           <div className='flex flex-col w-[191px] h-[125px] p-2 items-center gap-2'>

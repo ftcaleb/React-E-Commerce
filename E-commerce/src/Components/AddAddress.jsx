@@ -1,5 +1,6 @@
 import { ChevronDownIcon } from '@heroicons/react/16/solid'
 import Gbag from '../assets/ContactGbag.svg'
+import { Link } from 'react-router-dom'
 
 export default function AddAddress() {
   return (
@@ -100,15 +101,19 @@ export default function AddAddress() {
           </div>
         </div>
         <div className="mt-10">
+          <Link to='/checkout'>
           <button
             type="submit"
             className="block w-full  bg-black px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Add Address
           </button>
+          </Link>
         </div>
         <div className='flex mt-[30px]'>
+          <Link to='/checkout'>
             <div className='text-label flex justify-start underline text-Scolor'>Back</div>
+          </Link>
             <div className='flex justify-end ml-90 contact-secure '><img src={Gbag} alt="" />Secure Connection</div>
         </div>
       </form>

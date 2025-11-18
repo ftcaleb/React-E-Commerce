@@ -10,6 +10,9 @@ import AddAddress from './Components/AddAddress'
 import Bag from './Components/Bag'      // <-- NEW
 import ItemView from './Components/ItemView'  // <-- NEW
 import Home from './Pages/Home'         // <-- RECOMMENDED
+import AddPayment from './Components/AddPayment';
+import Checkout from './Components/Checkout';
+
 
 function App() {
   return (
@@ -21,6 +24,11 @@ function App() {
 
         {/* ADD ADDRESS PAGE */}
         <Route path="/add-address" element={<AddAddress />} />
+        
+        {/* Add Payment Page */}
+        <Route path="/add-payment" element={<AddPayment />} />
+
+        <Route path="/checkout" element={<Checkout />} />
 
         {/* BAG PAGE */}
         <Route path="/bag" element={<Bag />} />

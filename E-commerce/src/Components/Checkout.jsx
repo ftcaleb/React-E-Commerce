@@ -1,9 +1,10 @@
 import React from "react"
 import { Star, Minus, Plus, ChevronLeft } from "lucide-react"
-import Laptop from "./assets/Laptop.png"
-import iPhone13 from "./assets/iPhone13.png"
-import iPhone11w from "./assets/iPhone11w.png"
-import iPhone11 from "./assets/iPhone11.png"
+import Laptop from "../assets/Laptop.png"
+import iPhone13 from "../assets/iPhone13.png"
+import iPhone11w from "../assets/iPhone11w.png"
+import iPhone11 from "../assets/iPhone11.png"
+import { Link } from "react-router-dom"
 
 export default function CheckoutPage() {
   const items = [
@@ -61,9 +62,11 @@ export default function CheckoutPage() {
           <div className="bg-white p-6 rounded-md shadow-sm">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold">Shipping Address</h2>
+              <Link to='/add-address'>
               <button className="text-sm px-3 py-1 border rounded hover:bg-gray-50">
-                Edit
+                Change
               </button>
+              </Link>
             </div>
 
             <div className="text-sm text-gray-700 space-y-1">
@@ -77,9 +80,11 @@ export default function CheckoutPage() {
           <div className="bg-white p-6 rounded-md shadow-sm">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold">Payment Method</h2>
+              <Link to='/add-payment'>
               <button className="text-sm px-3 py-1 border rounded hover:bg-gray-50">
-                Edit
+                Change
               </button>
+              </Link>
             </div>
 
             <div className="text-sm space-y-2">
@@ -187,11 +192,14 @@ export default function CheckoutPage() {
               Place Order
             </button>
 
-            <button className="w-full py-2 border rounded flex items-center justify-center gap-2 hover:bg-gray-50 text-sm">
+            
+          </div>
+          <Link to='/bag'>
+          <button className="checkout ml-60 mt-10 py-2 border rounded flex items-center justify-center gap-2 hover:bg-gray-50 text-sm">
               <ChevronLeft size={16} />
               Back
             </button>
-          </div>
+            </Link>
         </div>
       </div>
     </div>

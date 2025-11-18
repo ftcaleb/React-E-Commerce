@@ -5,6 +5,8 @@ import White11 from "../assets/White11.png";
 import Green11 from "../assets/Green11.png";
 import AppleWatch from "../assets/AppleWatch.png";
 import BlueImage from "../assets/Blue11.png"
+import Sidebar from "./Sidebar";
+import { Link } from 'react-router-dom'
 
 export default function Bag() {
   const items = [
@@ -38,6 +40,16 @@ export default function Bag() {
       qty: 1,
       rating: 4.5,
     },
+    {
+      id: 4,
+      title: "iPhone 11",
+      color: "Series Black",
+      desc: "A beautifully designed device offering excellent battery life and crisp photo quality.",
+      img: Black11,
+      price: 619.99,
+      qty: 1,
+      rating: 4.5,
+    },
   ];
 
   const total = items.reduce((t, i) => t + i.price * i.qty, 0).toFixed(2);
@@ -46,21 +58,7 @@ return (
   <div className="min-h-screen bg-[#eeeeee] flex">
     
     {/* Sidebar */}
-    <aside className="w-20 bg-white flex flex-col items-center py-6 border-r border-gray-200 space-y-6">
-      
-      <div className="w-11 h-11 bg-[#0EB760] rounded-lg flex items-center justify-center shadow-sm"></div>
-      <div className="w-11 h-11 rounded-lg flex items-center justify-center hover:bg-gray-100 cursor-pointer">
-        <span className="text-xl">≡</span>
-      </div>
-      <div className="w-11 h-11 rounded-lg flex items-center justify-center hover:bg-gray-100 cursor-pointer">
-        <span className="text-xl">🛒</span>
-      </div>
-      <div className="w-11 h-11 rounded-lg flex items-center justify-center hover:bg-gray-100 cursor-pointer">
-        <span className="text-xl">📷</span>
-      </div>
-
-    </aside>
-
+    <Sidebar/>
     {/* Main content */}
     <main className="flex-1 flex p-10 gap-10">
 
@@ -137,9 +135,10 @@ return (
           Bag Total: <span className="font-semibold">${total}</span>
         </p>
 
-        <button className="bg-black text-white w-full py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-900">
+        <Link to='/checkout'><button className="bg-black text-white w-full py-3 rounded-lg flex items-center justify-center gap-2 hover:bg-gray-900">
           <span>🧾</span> Checkout
         </button>
+        </Link>
       </aside>
 
     </main>
