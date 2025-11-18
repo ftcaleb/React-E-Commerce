@@ -191,15 +191,17 @@ export default function CheckoutPage() {
             <button className="w-full bg-black text-white py-2 rounded hover:bg-gray-800 mb-3">
               Place Order
             </button>
-
             
           </div>
-          <Link to='/bag'>
-          <button className="checkout ml-60 mt-10 py-2 border rounded flex items-center justify-center gap-2 hover:bg-gray-50 text-sm">
+          <div className=" fixed">
+            <Link to='/bag'>
+          <button className="checkout  ml-60 mt-10 py-2 border rounded flex items-center justify-center gap-2 hover:bg-gray-50 text-sm">
               <ChevronLeft size={16} />
               Back
             </button>
             </Link>
+            </div>
+          
         </div>
       </div>
     </div>

@@ -187,7 +187,9 @@ function AddCardForm({ formData, onChange, formatCardNumber, formatExpiry, onSub
 function PaymentFooter() {
   return (
     <footer className="flex justify-between text-sm items-center">
+      <Link to='/checkout'>
       <button className="text-gray-600 hover:text-gray-900">Back</button>
+      </Link>
       <div className="flex items-center gap-1 text-teal-600 font-medium">
         <Lock className="w-4 h-4" /> Secure Connection
       </div>
