@@ -1,7 +1,7 @@
 import React from "react"
 import { Star, Minus, Plus, ChevronLeft } from "lucide-react"
 import Laptop from "../assets/Laptop.png"
-import iPhone13 from "../assets/iPhone13.png"
+import iPhone13 from "../assets/IPhone13.png"
 import iPhone11w from "../assets/iPhone11w.png"
 import iPhone11 from "../assets/iPhone11.png"
 import { Link } from "react-router-dom"
@@ -187,10 +187,11 @@ export default function CheckoutPage() {
                 </span>
               </div>
             </div>
-
+            <Link to='/order-success'>  
             <button className="w-full bg-black text-white py-2 rounded hover:bg-gray-800 mb-3">
               Place Order
             </button>
+            </Link>
             
           </div>
           <div className=" fixed">

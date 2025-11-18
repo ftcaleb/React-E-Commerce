@@ -12,6 +12,7 @@ import ItemView from './Components/ItemView'
 import Home from './Pages/Home'         
 import AddPayment from './Components/AddPayment';
 import Checkout from './Components/Checkout';
+import OrderSuccess from './Pages/OrderSuccess';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
 
         {/* HOME PAGE */}
         <Route path="/" element={<Home />} />
+
+        <Route path="/order-success" element={<OrderSuccess />} />
 
         {/* ADD ADDRESS PAGE */}
         <Route path="/add-address" element={<AddAddress />} />
